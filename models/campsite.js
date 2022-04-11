@@ -28,10 +28,9 @@ const commentSchema = new Schema(
 
 const campsiteSchema = new Schema(
 	{
-		name: {
-			type: String,
-			required: true,
-			unique: true,
+		author: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: "User",
 		},
 		description: {
 			type: String,

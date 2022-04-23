@@ -29,10 +29,6 @@ const commentSchema = new Schema(
 
 const campsiteSchema = new Schema(
 	{
-		author: {
-			type: String,
-			required: true,
-		},
 		description: {
 			type: String,
 			required: true,
